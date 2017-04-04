@@ -9,7 +9,7 @@ import (
 	"github.com/cubex/potens-go/application"
 	"github.com/cubex/proto-go/applications"
 	zipkin "github.com/openzipkin/zipkin-go-opentracing"
-	"github.com/uber-go/zap"
+	"go.uber.org/zap"
 	"golang.org/x/net/context"
 )
 

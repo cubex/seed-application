@@ -12,7 +12,7 @@ import (
 	"github.com/cubex/potens-go/webui"
 	"github.com/cubex/potens-go/webui/breadcrumb"
 	"github.com/cubex/proto-go/applications"
-	"github.com/uber-go/zap"
+	"go.uber.org/zap"
 	"golang.org/x/net/context"
 )
 
@@ -77,5 +77,5 @@ func (s *server) HandleSocketAction(ctx context.Context, in *applications.Socket
 }
 
 func (s *server) ModifyRelationship(context.Context, *applications.ProjectModifyRequest) (*applications.ProjectModifyResponse, error) {
-	return &applications.ProjectModifyResponse{Success:true}, nil
+	return &applications.ProjectModifyResponse{Success: true}, nil
 }

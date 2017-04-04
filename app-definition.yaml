@@ -19,7 +19,7 @@ vendor: your-vendor-id
 app_id: seed-application
 
 #Category to place this app in
-category: other
+category: crm
 
 #######################
 # Display Information #
@@ -56,6 +56,7 @@ navigation:
     #Path to follow (relative to your application)
     path: /
 
+
 integrations:
   #Page Header Navigation Items
   header_menu_items:
@@ -68,6 +69,21 @@ integrations:
       #Text to display on menu
       title:
         en: Details
+        fr: Détails
+      #Hover text for menu item
+      description:
+        en: Details of a thing
+        fr: Détails d'une chose
+
+      #ID for this menu item
+    - id: cust-details
+      #Path to integrate into
+      hook: fortifiplatform/customers/:fid
+      #Path to link to on click
+      path: :fid/details
+      #Text to display on menu
+      title:
+        en: Bob
         fr: Détails
       #Hover text for menu item
       description:
